@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="description" content="Ville göra min egen fysiska version av en windows volymkontroll mha deej. Varje slider påverkar olika programs volym på datorn">        
+    <meta property="og:image" content="../images/projects/volymkontroll/main_2.png">    
+    <title>Volymkontroll - Philip Wallin</title>    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="../index.html"><img src="../images/logo.png" alt="Logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Projekt</a></li>
+            <li><a href="../om_mig.html">Om mig</a></li>
+        </ul>
+    </nav>
+    
+    <section class="project-detail">
+        <h1>Volymkontroll</h1>
+        <div class="project-content">
+            <div class="project-description">
+                <p>Ville göra min egen fysiska version av en windows volymkontroll mha deej</p>
+                <p>Varje slider påverkar olika programs volym på datorn</p>
+            </div>
+            <div class="project-images">
+                <img src="../images/projects/volymkontroll/main_1.png" alt="Volymkontroll bild 1">
+                <img src="../images/projects/volymkontroll/main_2.png" alt="Volymkontroll bild 2">
+                <img src="../images/projects/volymkontroll/main_3.png" alt="Volymkontroll bild 3">
+            </div>
+            
+            <h2>Hur den gjordes</h2>
+            
+            <div class="project-steps">
+                <div class="step-row">
+                    <img src="../images/projects/volymkontroll/step_1.jpg" alt="Steg 1">
+                    <div class="step-text">
+                        <p>Började med att beställa hem 5 stycken slider potentiometrar</p>
+                        <p>Jag gjorde sedan en 3D model där man hade plats för potentiometrarna samt en slinga med ws2812b leds för varje</p>
+                    </div>
+                </div>
+
+                <div class="step-row">
+                    <img src="../images/projects/volymkontroll/step_2.jpg" alt="Steg 2">
+                    <div class="step-text">
+                        <p>För att få en finare slutfinish så slipade och målade jag 3D printen</p>
+                        <p>Jag skar ut en bit plexi som används för att sprida ljuset från lamporna</p>
+                    </div>
+                </div>
+
+                <div class="step-row">
+                    <img src="../images/projects/volymkontroll/step_3.jpg" alt="Steg 3">
+                    <div class="step-text">
+                        <p>I basen sitter det en arduino som kör en modifierad version av deejs kod för att skicka värdet från alla potentiometrarna till datorn</p>
+                        <p>På datorn kör jag bara deejs egen mjukvara för att ta emot signalerna och faktiskt ändra volymen för de specificerade programmen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

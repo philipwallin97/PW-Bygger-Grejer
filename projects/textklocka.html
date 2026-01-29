@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jag heter Philip Wallin och bygger lite grejer på fritiden så här finns en samling av de sakerna jag gjort">
+    <meta property="og:image" content="../images/projects/textklocka/main_2.png">
+    <title>Textklocka - Philip Wallin</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="../index.html"><img src="../images/logo.png" alt="Logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Projekt</a></li>
+            <li><a href="../om_mig.html">Om mig</a></li>
+        </ul>
+    </nav>
+    
+    <section class="project-detail">
+        <h1>Textklocka</h1>
+        <div class="project-content">
+            <div class="project-description">
+                <p>En liten lampa för att fylla ut ett tomrum i en hylla</p>
+                <p>Ville testa göra en lampa med hål i mitten men ändå ha lite liv i den</p>
+            </div>
+            <div class="project-images">
+                <img src="../images/projects/textklocka/main_1.png" alt="Textklocka bild 1">
+                <img src="../images/projects/textklocka/main_2.png" alt="Textklocka bild 2">
+                <img src="../images/projects/textklocka/main_3.png" alt="Textklocka bild 3">
+            </div>
+            
+            <h2>Hur den gjordes</h2>
+
+            <div class="project-steps">
+                <div class="step-row">
+                    <img src="../images/projects/textklocka/step_1.jpg" alt="Steg 1">
+                    <div class="step-text">
+                        <p>Jag började med att göra en 3D modell av en mindre version bara för att kunna börja på mjukvaran.</p>
+                        <p>Sen efter typ 14 olika versioner så blev jag typ nöjd (kunde varit så mycket bättre).</p>
+                        <p>Jag skrev ut en liten sektion bara för att kunna testa lite hur jag skulle få en fin yta.</p>
+                    </div>
+                </div>
+                <div class="step-row">
+                    <img src="../images/projects/textklocka/step_2.jpg" alt="Steg 2">
+                    <div class="step-text">
+                        <p>Sedan va det bara att börja printa och sätta ihop de olika delarna.</p>
+                        <p>Fram och baksidan består av 4 delar var som sitter ihop med skruv och lim.</p>
+                    </div>
+                </div>
+                <div class="step-row">
+                    <img src="../images/projects/textklocka/step_3.jpg" alt="Steg 3">
+                    <div class="step-text">
+                        <p>På baksidan sitter de 10 rader med 11 WS2812b leds plus en i varje hörn för minuterna.</p>
+                        <p>Hade jag varit riktigt smart hade jag designat denna så att avståndet mellan varje bokstav är densamma som avståndet mellan lamporna på en 30led/m slinga. </p>
+                        <p>Det är jag inte så istället fick jag löda ihop alla leds.</p>
+                        <p>Lamporna kontrolleras av en wemos d1 som kör en modifierad version av WLED.</p>
+                    </div>
+                </div>
+                <div class="step-row">
+                    <img src="../images/projects/textklocka/step_4.jpg" alt="Steg 4">
+                    <div class="step-text">
+                        <p>Att få den ytfinishen jag ville ha va inte de enklaste när man bara har ett badrum att tillgå.</p>
+                        <p>För att dölja sömmen mellan de olika delarna var det spackel och slipning på schemat. </p>
+                        <p>Sen var det dags för att måla.</p>
+                    </div>
+                </div>
+                <div class="step-row">
+                    <img src="../images/projects/textklocka/step_5.jpg" alt="Steg 5">
+                    <div class="step-text">
+                        <p>Jag började först med att rolla men det slutade med att jag plastade in hela badrummet och spraymålade istället.</p>
+                    </div>
+                </div>
+                <div class="step-row">
+                    <img src="../images/projects/textklocka/step_6.jpg" alt="Steg 6">
+                    <div class="step-text">
+                        <p>Efter jag va nöjd med ytan va det dags för montering vilket inkluderade att sätta in en liten diffuspanel i varje bokstav och sedan skruva ihop fram och bakpanelen.</p>
+                        <p>Det sista steget som jag gjorde lite annorlunde jämfört med qlocktwos orginal är att jag ville inte ha tomrum eller ihopkopplade bokstäver eller hur man ska förklara de. Detta innebar att jag fick limma fast alla separata delar till de bokstäver som krävde de. Ex p,o,d,ö</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

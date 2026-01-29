@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="description" content="Tyckte idéen om att ha flera cirklar som sitter ihop med varandra och lyser lät coolt i mitt huvud. Alla cirklarna kan rotera runt 180 grader så man kan ställa in den lite som man vill">        
+    <meta property="og:image" content="../images/projects/cirkellampa/main_2.png">    
+    <title>Cirkellampa - Philip Wallin</title>    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="../index.html"><img src="../images/logo.png" alt="Logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Projekt</a></li>
+            <li><a href="../om_mig.html">Om mig</a></li>
+        </ul>
+    </nav>
+    
+    <section class="project-detail">
+        <h1>Cirkellampa</h1>
+        <div class="project-content">
+            <div class="project-description">
+                <p>Tyckte idéen om att ha flera cirklar som sitter ihop med varandra och lyser lät coolt i mitt huvud</p>
+                <p>Alla cirklarna kan rotera runt 180 grader så man kan ställa in den lite som man vill</p>
+            </div>
+            <div class="project-images">
+                <img src="../images/projects/cirkellampa/main_1.png" alt="Cirkellampa bild 1">
+                <img src="../images/projects/cirkellampa/main_2.png" alt="Cirkellampa bild 2">
+                <img src="../images/projects/cirkellampa/main_3.png" alt="Cirkellampa bild 3">
+            </div>
+            
+            <h2>Hur den gjordes</h2>
+            
+            <div class="project-steps">
+                <div class="step-row">
+                    <img src="../images/projects/cirkellampa/step_1.jpg" alt="Steg 1">
+                    <div class="step-text">
+                        <p>Som med allt annat jag gör så började denna med en 3D modell</p>
+                        <p>Detta va ett av mina första projekt så är en del saker som inte blev helt perfekt men man lär sig</p>
+                        <p>Djupet är så pass stort att man kan knappt urskilja de olika lamporna när diffusorn sitter på varje ring och bredden är strax över bredden på en ws2812b led</p>
+                    </div>
+                </div>
+
+                <div class="step-row">
+                    <img src="../images/projects/cirkellampa/step_2.jpg" alt="Steg 2">
+                    <div class="step-text">
+                        <p>Alla lamporna va tvunga att lödas om för att få till svängradien för varje cirkel</p>
+                        <p>De olika cirklarna sitter ihop med en liten plug och en "spacer" för att de inte ska ramla ut</p>
+                        <p>Sladdarna mellan de olika ringarna går inuti de pluggarna så den är lite pillig att löda ihop.</p>
+                    </div>
+                </div>
+
+                <div class="step-row">
+                    <img src="../images/projects/cirkellampa/step_3.jpg" alt="Steg 3">
+                    <div class="step-text">
+                        <p>Tanken va egentligen att göra en bra mycket större version av denna och ha som taklampa och använda slip rings mellan de olika ringarna men det blev väldigt dyrt och väldigt complext väldigt fort, men någon gång lär jag nog testa de.</p>
+                        <p>Allt drivs av en wemos d1 som gömmer sig i basen. Den kör WLED för att kontrollera lamporna och sköta animationerna</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
