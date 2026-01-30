@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://philippwallin.se/sitemap.xml
+Sitemap: https://philipwallin.pw/sitemap.xml
