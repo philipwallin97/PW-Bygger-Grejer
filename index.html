@@ -21,7 +21,10 @@
       </nav>
       
       <div class="hero">
-          <img src="images/hero.png" fetchpriority="high" alt="Hero Image">
+          <picture>
+              <source media="(min-width: 768px)" srcset="images/hero_desktop.WebP" type="image/webp">
+              <img src="images/hero_mobile.webp" fetchpriority="high" alt="Hero Image">
+          </picture>
       </div>
       
       <section class="intro-section" role="main">
