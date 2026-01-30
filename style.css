@@ -172,7 +172,7 @@ nav {
 /* Project Detail Page */
 .project-detail {
     padding: 60px 20px;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -220,7 +220,6 @@ nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -252,7 +251,7 @@ nav {
 }
 
 .project-steps {
-    max-width: 1300px;
+    max-width: 1400px;
     margin: 0 auto;
     margin-left: 80px;
     margin-right: 80px;
