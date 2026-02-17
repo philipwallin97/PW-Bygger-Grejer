@@ -191,14 +191,6 @@ nav {
     opacity: 1;
 }
 
-.project-item.is-active img {
-    filter: brightness(0.55);
-}
-
-.project-item.is-active .project-overlay {
-    opacity: 1;
-}
-
 @keyframes project-item-in {
     from {
         opacity: 0;
@@ -270,7 +262,6 @@ nav {
         grid-template-columns: 1fr;
     }
 }
-
 
 /* Project Detail Page */
 .project-detail {
