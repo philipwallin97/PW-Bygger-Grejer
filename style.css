@@ -76,6 +76,18 @@ nav {
     height: clamp(170px, 24vw, 280px);
 }
 
+.hero::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 35%;
+    background: linear-gradient(to bottom, #111 0%, rgba(17, 17, 17, 0.6) 40%, rgba(17, 17, 17, 0) 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
 .hero::after {
     content: '';
     position: absolute;
@@ -128,7 +140,7 @@ nav {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 15px;
-    color: white;
+    color: #aaa;
 }
 
 /* Projects Section */
