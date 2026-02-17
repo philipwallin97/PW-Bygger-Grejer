@@ -72,6 +72,10 @@ nav {
     position: relative;
 }
 
+.page-om-mig .hero {
+    height: clamp(170px, 24vw, 280px);
+}
+
 .hero::after {
     content: '';
     position: absolute;
