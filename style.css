@@ -127,9 +127,11 @@ nav {
 }
 
 .intro-section h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     margin-bottom: 30px;
     font-weight: 600;
+    letter-spacing: 0.03em;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.25), 0 4px 12px rgba(0, 0, 0, 0.8);
 }
 
 .intro-accent {
@@ -272,6 +274,15 @@ nav {
         left: 50%;
         max-width: none;
         padding-top: 35px;
+    }
+
+    .intro-section h1 {
+        font-size: 2rem;
+        letter-spacing: 0.02em;
+    }
+
+    .intro-section p {
+        font-size: 1rem;
     }
 
     .projects-grid {
