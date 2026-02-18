@@ -303,13 +303,19 @@ nav {
         font-size: 1.1rem;
     }
 
+    .project-overlay {
+        --grad-stop: 20%;
+    }
+
     .project-item:hover .project-overlay {
-        --grad-stop: 40%;
+        --grad-stop: 20%;
     }
 
     .project-item:hover .project-overlay h2 {
         bottom: 12px;
     }
+
+
 }
 
 /* Project Detail Page */
