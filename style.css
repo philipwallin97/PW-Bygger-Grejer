@@ -1,3 +1,9 @@
+@property --grad-stop {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 40%;
+}
+
 @font-face {
   font-display: swap;
   font-family: 'Poppins';
@@ -175,7 +181,7 @@ nav {
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: filter 0.3s ease;
+    transition: filter 0.5s ease;
 }
 
 .project-overlay {
@@ -187,26 +193,30 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    opacity: 1;
+    background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.4) var(--grad-stop), transparent 100%);
+    transition: --grad-stop 0.4s ease;
     pointer-events: none;
 }
 
 .project-overlay h2 {
-       color: white;
-       font-size: 1.8rem;
-       font-weight: normal;
-       text-align: center;
-       z-index: 2;
-       padding: 0 20px;
-}
-
-.project-item:hover img {
-    filter: brightness(0.55);
+    position: absolute;
+    bottom: 12px;
+    left: 20px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-align: left;
+    z-index: 2;
+    transition: bottom 0.4s ease;
 }
 
 .project-item:hover .project-overlay {
-    opacity: 1;
+    --grad-stop: 60%;
+}
+
+.project-item:hover .project-overlay h2 {
+    bottom: 20px;
 }
 
 @keyframes project-item-in {
@@ -287,6 +297,18 @@ nav {
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .project-overlay h2 {
+        font-size: 1.1rem;
+    }
+
+    .project-item:hover .project-overlay {
+        --grad-stop: 40%;
+    }
+
+    .project-item:hover .project-overlay h2 {
+        bottom: 12px;
     }
 }
 
