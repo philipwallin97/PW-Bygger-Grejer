@@ -365,6 +365,11 @@ nav {
     margin-bottom: 10px;
 }
 
+.project-description a {
+    color: white;
+    text-decoration: underline;
+}
+
 .project-images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
