@@ -398,9 +398,17 @@ nav {
     display: block;
 }
 
+/* 2x2 layout for project pages with four images (same image size as the 3-column grid) */
+.project-images.grid-2x2 {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: calc((100% - 40px) * 2 / 3 + 20px);
+}
+
 @media (max-width: 768px) {
-    .project-images {
+    .project-images,
+    .project-images.grid-2x2 {
         grid-template-columns: 1fr;
+        max-width: none;
     }
 }
 
