@@ -194,7 +194,7 @@ nav {
     align-items: center;
     justify-content: center;
     opacity: 1;
-    background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.4) var(--grad-stop), transparent 100%);
+    background: linear-gradient(to top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.4) var(--grad-stop), transparent 100%);
     transition: --grad-stop 0.4s ease;
     pointer-events: none;
 }
