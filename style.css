@@ -194,7 +194,7 @@ nav {
     align-items: center;
     justify-content: center;
     opacity: 1;
-    background: linear-gradient(to top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.4) var(--grad-stop), transparent 100%);
+    background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.2) var(--grad-stop), transparent calc(var(--grad-stop) + 25%));
     transition: --grad-stop 0.4s ease;
     pointer-events: none;
 }
@@ -209,10 +209,6 @@ nav {
     text-align: left;
     z-index: 2;
     transition: bottom 0.4s ease;
-}
-
-.project-item:hover .project-overlay {
-    --grad-stop: 60%;
 }
 
 .project-item:hover .project-overlay h2 {
@@ -304,10 +300,6 @@ nav {
     }
 
     .project-overlay {
-        --grad-stop: 20%;
-    }
-
-    .project-item:hover .project-overlay {
         --grad-stop: 20%;
     }
 
