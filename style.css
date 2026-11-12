@@ -357,7 +357,8 @@ nav {
     margin-bottom: 10px;
 }
 
-.project-description a {
+.project-description a,
+.project-steps a {
     color: white;
     text-decoration: underline;
 }
